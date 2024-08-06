@@ -16,9 +16,12 @@ function PantryItem({ item, deleteItem, updateItem }) {
         <EditItem item={item} saveItem={handleSave} />
       ) : (
         <>
-          <span>{item.name}</span> - <span>{item.quantity}</span>
-          <button onClick={handleEdit}>Edit</button>
-          <button onClick={() => deleteItem(item.id)}>Delete</button>
+          {item.imageURL && <img src={item.imageURL} alt={item.name} style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '10px' }} />}
+          <span>{item.name}</span> - <span>{item.quantity}</span> - <span>{item.expirationDate}</span>
+          <div>
+            <button className="edit-button" onClick={handleEdit}>Edit</button>
+            <button className="delete-button" onClick={() => deleteItem(item.id)}>Delete</button>
+          </div>
         </>
       )}
     </div>
