@@ -54,3 +54,110 @@
   margin-left: 10px;
 }
 
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 120px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.edit-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-item-container input[type="text"],
+.edit-item-container input[type="number"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-item-container button {
+  width: 120px;
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-item-container button:hover {
+  background-color: #1976d2;
+}
+
+
+.pantry-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.pantry-item span {
+  font-size: 16px;
+}
+
+.pantry-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pantry-item button:hover {
+  opacity: 0.8;
+}
+
+.pantry-item .edit-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.pantry-item .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.item-list-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item-list-container > div {
+  margin-bottom: 10px;
+}
